@@ -12,6 +12,8 @@
 <meta property="og:description" content="若い世代のお部屋探しをスピードとシンプルさでサポート。ご相談・お見積りは無料です。">
 <meta property="og:image" content="https://sysmiyazaki0806-tech.github.io/plain-lp/images/m04.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f3f0e8">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="%231f1d18"/><text x="32" y="45" font-family="Georgia,serif" font-size="38" fill="%23f3f0e8" text-anchor="middle">P</text></svg>'>
 <noscript><style>.rv,.rv-img{opacity:1!important;transform:none!important;clip-path:none!important}.faq-a{max-height:none!important}</style></noscript>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -861,7 +863,12 @@ body.menu-open .sp-cta{display:none}
       </figure>
       <a class="tel-box" href="tel:08025279209"><span class="n">080-2527-9209</span><span class="t">TAP&nbsp;TO&nbsp;CALL</span></a>
     </div>
-    <form id="contactForm" class="ct-form rv" novalidate>
+    <!-- ※送信先は暫定(SYS宮崎宛)。クライアントのメール確定後、action内のメールアドレスを差し替えること -->
+    <form id="contactForm" class="ct-form rv" action="https://formsubmit.co/sys.miyazaki0806@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="【PLAIN】サイトからのお問い合わせ">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://sysmiyazaki0806-tech.github.io/plain-lp/?sent=1#contact">
       <div class="f-row">
         <label for="f-type">ご用件<em>必須</em></label>
         <select id="f-type" name="type" required>
@@ -883,9 +890,9 @@ body.menu-open .sp-cta{display:none}
         <label for="f-msg">ご希望・ご質問</label>
         <textarea id="f-msg" name="message" placeholder="例）◯◯駅の近くで、家賃◯万円までの1Kを探しています。"></textarea>
       </div>
-      <p class="form-note">※ フォームは現在準備中です。お急ぎの方はお電話（080-2527-9209）にてご連絡ください。</p>
+      <p class="form-note">送信いただいた内容は担当者に届きます。お急ぎの方はお電話（080-2527-9209）が確実です。</p>
       <button class="btn" type="submit">送信する<span class="ar">&rarr;</span></button>
-      <p class="form-done" id="formDone" role="status">お問い合わせありがとうございます。<br>現在フォームは準備中のため送信は完了していません。お手数ですが、お電話（080-2527-9209）にてご連絡ください。</p>
+      <p class="form-done" id="formDone" role="status">お問い合わせありがとうございました。<br>内容を確認のうえ、担当者よりご連絡いたします。</p>
     </form>
   </div>
 </section>
@@ -999,14 +1006,13 @@ body.menu-open .sp-cta{display:none}
     });
   });
 
-  /* フォーム（送信先は公開時に接続） */
-  var form = document.getElementById('contactForm');
-  if(form){
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      var done = document.getElementById('formDone');
-      if(done){ done.classList.add('visible'); done.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'center'}); }
-    });
+  /* フォーム送信後（?sent=1で戻ってきたら完了メッセージを表示） */
+  if(location.search.indexOf('sent=1') !== -1){
+    var done = document.getElementById('formDone');
+    if(done){
+      done.classList.add('visible');
+      setTimeout(function(){ done.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'center'}); }, 300);
+    }
   }
 })();
 </script>
