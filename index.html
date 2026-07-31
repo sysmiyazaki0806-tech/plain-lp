@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>株式会社PLAIN｜シンプルに、いちばん速い部屋探し</title>
+<meta name="description" content="株式会社PLAINは、若い世代のお部屋探しをスピードとシンプルさでサポートする不動産賃貸会社です。初期費用のご相談から内見・ご契約まで、最短距離の新生活をお手伝いします。">
+<!-- ※独自ドメイン移行時: og:url / og:image のURLを差し替えること -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sysmiyazaki0806-tech.github.io/plain-lp/">
+<meta property="og:title" content="株式会社PLAIN｜シンプルに、いちばん速い部屋探し">
+<meta property="og:description" content="若い世代のお部屋探しをスピードとシンプルさでサポート。ご相談・お見積りは無料です。">
+<meta property="og:image" content="https://sysmiyazaki0806-tech.github.io/plain-lp/images/m04.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="%231f1d18"/><text x="32" y="45" font-family="Georgia,serif" font-size="38" fill="%23f3f0e8" text-anchor="middle">P</text></svg>'>
+<noscript><style>.rv,.rv-img{opacity:1!important;transform:none!important;clip-path:none!important}.faq-a{max-height:none!important}</style></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Sans+JP:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"RealEstateAgent","name":"株式会社PLAIN","telephone":"+81-80-2527-9209","description":"若い世代のお部屋探しをスピードとシンプルさでサポートする不動産賃貸会社"}
+</script>
+<style>
+/* ============================================================
+   PLAIN — 誌面派（左右非対称エディトリアル）
+============================================================ */
+:root{
+  --paper:#f3f0e8;
+  --paper2:#eae5d7;
+  --ink:#201d17;
+  --mut:#6d675a;
+  --acc:#96793f;
+  --line:#d9d2bf;
+  --dark:#171410;
+  --serif:"Shippori Mincho",serif;
+  --eng:"Cormorant Garamond",serif;
+  --sans:"Noto Sans JP",sans-serif;
+  --ease:cubic-bezier(.25,.8,.25,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:var(--sans);font-weight:300;font-size:14.5px;color:var(--ink);background:var(--paper);line-height:2.05;letter-spacing:.03em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+::selection{background:rgba(150,121,63,.25)}
+.grid{width:min(1240px,94vw);margin-inline:auto;display:grid;grid-template-columns:repeat(12,1fr);gap:0 clamp(12px,1.6vw,24px)}
+section{position:relative;padding:clamp(70px,9vw,130px) 0}
+
+/* ---------- 共通あしらい ---------- */
+.idx{position:absolute;font-family:var(--eng);font-style:italic;font-weight:400;font-size:clamp(80px,11vw,150px);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(32,29,23,.16);pointer-events:none;user-select:none;z-index:0}
+.kicker{display:flex;align-items:baseline;gap:14px;font-family:var(--eng);font-size:13px;letter-spacing:.32em;color:var(--acc);margin-bottom:14px}
+.kicker::before{content:"—";letter-spacing:0}
+.h2{font-family:var(--serif);font-weight:500;font-size:clamp(25px,3.4vw,40px);line-height:1.75;letter-spacing:.1em}
+.rail{position:absolute;top:120px;writing-mode:vertical-rl;font-family:var(--serif);font-size:12px;letter-spacing:.5em;color:var(--mut);opacity:.7;z-index:1;pointer-events:none}
+.rail.r{right:clamp(6px,1.6vw,22px)}
+.rail.l{left:clamp(6px,1.6vw,22px)}
+.circle-note{display:inline-block;border:1.5px solid var(--acc);border-radius:999px;padding:.02em .55em .08em;color:var(--acc);font-weight:400;line-height:1.6;vertical-align:baseline}
+.imgnote{font-size:10.5px;color:var(--mut);letter-spacing:.14em}
+
+/* 写真フィギュア */
+.ph{position:relative;overflow:visible}
+.ph .crop{overflow:hidden;background:#ddd6c4}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.3s var(--ease)}
+.ph:hover img{transform:scale(1.045)}
+.ph figcaption{display:flex;justify-content:space-between;gap:10px;font-size:10.5px;color:var(--mut);letter-spacing:.16em;padding-top:8px}
+.ph figcaption .en{font-family:var(--eng);font-style:italic;letter-spacing:.2em}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(30px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.show{opacity:1;transform:none}
+.rv-img .crop{clip-path:inset(0 100% 0 0)}
+.rv-img.show .crop{clip-path:inset(0 0 0 0);transition:clip-path 1.1s var(--ease)}
+.rv-img .crop img{transform:scale(1.1)}
+.rv-img.show .crop img{transform:scale(1)}
+.rv-img:hover.show .crop img{transform:scale(1.045)}
+
+/* ---------- ヘッダー ---------- */
+header{position:fixed;inset:0 0 auto 0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:14px clamp(16px,3vw,40px);transition:background .4s,box-shadow .4s}
+header.scrolled{background:rgba(243,240,232,.94);box-shadow:0 2px 20px rgba(32,29,23,.08)}
+header .logo img{height:42px;width:auto}
+.gnav{display:flex;align-items:center;gap:clamp(14px,2vw,26px)}
+.gnav a{font-size:12.5px;letter-spacing:.14em;padding:6px 2px;position:relative}
+.gnav a::after{content:"";position:absolute;left:0;bottom:2px;width:100%;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:right;transition:transform .4s var(--ease)}
+.gnav a:hover::after{transform:scaleX(1);transform-origin:left}
+.gnav .cta{border:1px solid var(--ink);padding:9px 20px;letter-spacing:.18em}
+.gnav .cta::after{display:none}
+.gnav .cta:hover{background:var(--ink);color:var(--paper)}
+.menu-toggle{display:none;width:46px;height:46px;background:none;border:none;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:7px;position:relative;z-index:20}
+.menu-toggle span{width:26px;height:1.5px;background:var(--ink);transition:.4s var(--ease)}
+body.menu-open .menu-toggle span:nth-child(1){transform:translateY(4px) rotate(30deg)}
+body.menu-open .menu-toggle span:nth-child(2){transform:translateY(-4px) rotate(-30deg)}
+#mnav{position:fixed;inset:0;z-index:998;background:var(--paper);display:flex;align-items:center;padding-left:10vw;opacity:0;visibility:hidden;transition:opacity .5s var(--ease),visibility .5s}
+#mnav::after{content:"PLAIN";position:absolute;right:-4vw;bottom:-6vw;font-family:var(--eng);font-style:italic;font-size:38vw;color:rgba(32,29,23,.05);line-height:1;pointer-events:none}
+body.menu-open #mnav{opacity:1;visibility:visible}
+#mnav ol{counter-reset:mn;display:grid;gap:4px}
+#mnav a{counter-increment:mn;display:flex;align-items:baseline;gap:16px;font-family:var(--serif);font-size:clamp(20px,4.6vw,26px);letter-spacing:.16em;padding:8px 0;opacity:0;transform:translateX(-14px);transition:opacity .5s var(--ease),transform .5s var(--ease)}
+#mnav a::before{content:counter(mn,decimal-leading-zero);font-family:var(--eng);font-style:italic;font-size:13px;color:var(--acc)}
+body.menu-open #mnav a{opacity:1;transform:none}
+#mnav li:nth-child(1) a{transition-delay:.08s}#mnav li:nth-child(2) a{transition-delay:.13s}#mnav li:nth-child(3) a{transition-delay:.18s}#mnav li:nth-child(4) a{transition-delay:.23s}#mnav li:nth-child(5) a{transition-delay:.28s}#mnav li:nth-child(6) a{transition-delay:.33s}#mnav li:nth-child(7) a{transition-delay:.38s}#mnav li:nth-child(8) a{transition-delay:.43s}
+
+/* ---------- ヒーロー ---------- */
+.hero{padding:0;min-height:100svh;display:flex;align-items:center;overflow:hidden}
+.hero-grid{position:relative;width:min(1300px,96vw);margin-inline:auto;display:grid;grid-template-columns:repeat(12,1fr);align-items:center;padding:110px 0 60px}
+.hero-ph{grid-column:6/13;grid-row:1;position:relative}
+.hero-ph .crop{aspect-ratio:16/11;overflow:hidden;background:#ddd6c4}
+.hero-ph img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);animation:hz 12s ease-out forwards}
+@keyframes hz{to{transform:scale(1)}}
+.hero-ph .cap{position:absolute;right:6px;bottom:-26px;font-size:10px;letter-spacing:.2em;color:var(--mut)}
+.hero-sub{position:absolute;left:32%;bottom:-15%;width:28%;box-shadow:14px 18px 40px rgba(32,29,23,.18);transform:rotate(-.7deg);z-index:4}
+.hero-sub .crop{aspect-ratio:4/3;overflow:hidden}
+.hero-copy{grid-column:1/7;grid-row:1;position:relative;z-index:3;mix-blend-mode:normal}
+.hero-copy .over{background:rgba(243,240,232,.86);backdrop-filter:blur(2px);padding:clamp(20px,3vw,40px) clamp(20px,3vw,40px) clamp(24px,3vw,44px) 0}
+.hero-eyebrow{font-family:var(--eng);font-size:12px;letter-spacing:.4em;color:var(--acc);margin-bottom:20px;display:flex;align-items:center;gap:14px}
+.hero-eyebrow::before{content:"";width:44px;height:1px;background:var(--acc)}
+.hero h1{font-family:var(--serif);font-weight:500;line-height:1.5;letter-spacing:.08em}
+.hero h1 .l1{display:block;font-size:clamp(20px,2.6vw,30px)}
+.hero h1 .l2{display:block;font-size:clamp(38px,5.8vw,72px)}
+.hero h1 .l3{display:block;font-size:clamp(28px,4vw,48px);margin-left:clamp(12px,2.5vw,48px)}
+.hero h1 .em{color:var(--acc)}
+.hero-lead{max-width:29em;font-size:13.5px;color:var(--mut);margin:24px 0 30px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-width:210px;padding:15px 28px;font-size:13px;letter-spacing:.2em;border:1px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer;transition:.35s;font-family:var(--sans)}
+.btn:hover{background:transparent;color:var(--ink)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.btn .ar{font-family:var(--eng);font-style:italic}
+.hero-index{position:absolute;left:0;bottom:-6px;display:flex;gap:26px;font-family:var(--eng);font-size:11px;letter-spacing:.24em;color:var(--mut)}
+.hero-index span b{font-style:italic;color:var(--acc);font-weight:400;margin-right:6px}
+.hero-vert{position:absolute;right:clamp(4px,1vw,16px);top:28%;writing-mode:vertical-rl;font-family:var(--eng);font-size:11px;letter-spacing:.5em;color:#f6f2e8;text-shadow:0 1px 10px rgba(32,29,23,.5);z-index:4}
+.hero-vert::after{content:"";display:block;width:1px;height:70px;background:#f6f2e8;margin:16px auto 0;animation:vln 2.4s ease-in-out infinite}
+@keyframes vln{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ---------- 写真ストリップ ---------- */
+.strip{padding:clamp(30px,4vw,50px) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;background:var(--paper)}
+.strip-track{display:flex;gap:clamp(14px,2vw,26px);width:max-content;animation:strip 46s linear infinite}
+.strip:hover .strip-track{animation-play-state:paused}
+@keyframes strip{to{transform:translateX(-50%)}}
+.strip figure{flex:0 0 auto;width:clamp(180px,22vw,300px)}
+.strip figure:nth-child(odd){transform:translateY(8px)}
+.strip figure:nth-child(even){transform:translateY(-8px)}
+.strip .crop{aspect-ratio:4/3;overflow:hidden}
+.strip figure:nth-child(3n) .crop{aspect-ratio:3/4}
+.strip img{width:100%;height:100%;object-fit:cover}
+.strip figcaption{font-size:10px;letter-spacing:.2em;color:var(--mut);padding-top:6px;font-family:var(--eng);font-style:italic}
+
+/* ---------- STATEMENT ---------- */
+.statement{overflow:hidden}
+.statement .idx{top:20px;right:4vw}
+.st-vert{grid-column:2/5;writing-mode:vertical-rl;font-family:var(--serif);font-weight:500;font-size:clamp(26px,3.6vw,44px);letter-spacing:.3em;line-height:1.9;min-height:340px}
+.st-vert .em{color:var(--acc)}
+.st-body{grid-column:6/12;align-self:center}
+.st-body p{max-width:36em;color:var(--mut);margin-bottom:1.6em}
+.st-body p strong{color:var(--ink);font-weight:400}
+.st-ph{grid-column:3/11;margin-top:clamp(28px,4vw,54px)}
+.st-ph .crop{aspect-ratio:16/9}
+.st-sign{font-family:var(--eng);font-style:italic;font-size:19px;color:var(--acc);letter-spacing:.14em}
+
+/* ---------- PROBLEM ---------- */
+.problem{background:var(--paper2)}
+.problem .idx{top:30px;left:3vw}
+.pb-head{grid-column:2/9;margin-bottom:clamp(36px,5vw,60px)}
+.pb-list{grid-column:2/9;display:grid;gap:clamp(26px,3.4vw,40px)}
+.pb-item{display:grid;grid-template-columns:auto 1fr;gap:18px clamp(16px,2.4vw,30px);border-top:1px solid var(--line);padding-top:clamp(18px,2.4vw,28px)}
+.pb-item .no{font-family:var(--eng);font-style:italic;font-size:clamp(34px,4vw,52px);line-height:1;color:var(--acc)}
+.pb-item h3{font-family:var(--serif);font-weight:500;font-size:clamp(17px,2vw,21px);letter-spacing:.1em;margin-bottom:6px}
+.pb-item p{font-size:13px;color:var(--mut);max-width:32em}
+.pb-ph{grid-column:9/13;grid-row:1/3;align-self:stretch;position:relative}
+.pb-ph .inner{position:sticky;top:110px}
+.pb-ph .crop{aspect-ratio:3/4}
+.pb-msg{grid-column:2/12;margin-top:clamp(44px,6vw,70px);font-family:var(--serif);font-size:clamp(20px,3vw,30px);letter-spacing:.12em;line-height:2;text-align:center}
+.pb-msg .en-line{display:block;font-family:var(--eng);font-style:italic;font-size:13px;letter-spacing:.3em;color:var(--acc);margin-bottom:8px}
+
+/* ---------- REASON ---------- */
+.reason .idx{bottom:20px;right:3vw;top:auto}
+.rs-head{grid-column:2/10;margin-bottom:clamp(40px,5vw,66px)}
+.rs-grid{grid-column:1/13;display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(18px,2.4vw,30px)}
+.rs-item{border:1px solid var(--ink);padding:clamp(24px,3vw,38px) clamp(20px,2.4vw,32px);background:var(--paper)}
+.rs-item:nth-child(1){grid-column:1/5}
+.rs-item:nth-child(2){grid-column:5/9}
+.rs-item:nth-child(3){grid-column:9/13}
+.rs-item .en{font-family:var(--eng);font-style:italic;font-size:12px;letter-spacing:.3em;color:var(--acc);display:block;margin-bottom:12px}
+.rs-item h3{font-family:var(--serif);font-weight:500;font-size:clamp(18px,2vw,23px);letter-spacing:.12em;margin-bottom:10px}
+.rs-item p{font-size:13px;color:var(--mut)}
+.rs-item .big{font-family:var(--eng);font-style:italic;font-size:44px;line-height:1;color:transparent;-webkit-text-stroke:1px var(--acc);display:block;margin-bottom:14px}
+.rs-tail{grid-column:1/13;height:clamp(24px,4vw,56px)}
+
+/* ---------- GALLERY ---------- */
+.rooms{background:var(--dark);color:#efeadd}
+.rooms .kicker{color:#c8ab6e}
+.rooms .h2{color:#efeadd}
+.rooms .idx{-webkit-text-stroke-color:rgba(239,234,221,.14);top:26px;right:4vw}
+.rm-head{grid-column:2/10;margin-bottom:clamp(36px,5vw,60px)}
+.rm-note{grid-column:2/10;margin-top:-14px;margin-bottom:30px;color:rgba(239,234,221,.55);font-size:12px}
+.rm-grid{grid-column:1/13;display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(14px,2vw,26px);grid-auto-flow:dense}
+.rm-grid .ph figcaption{color:rgba(239,234,221,.6)}
+.rm-grid > figure{grid-column:span 4}
+.rm-grid > figure .crop{aspect-ratio:4/3}
+.rm-grid > figure:nth-child(n+4){margin-top:clamp(14px,2vw,26px)}
+.rm-more{grid-column:2/12;margin-top:clamp(40px,5vw,64px);display:flex;justify-content:center}
+.rooms .btn{border-color:#efeadd;background:transparent;color:#efeadd}
+.rooms .btn:hover{background:#efeadd;color:var(--dark)}
+
+/* ---------- SERVICE ---------- */
+.service .idx{top:26px;left:3vw}
+.sv-head{grid-column:2/11;margin-bottom:clamp(44px,6vw,80px)}
+.sv-row{grid-column:1/13;display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(16px,2.4vw,30px);align-items:center;margin-bottom:clamp(56px,8vw,110px)}
+.sv-row:last-of-type{margin-bottom:0}
+.sv-row .ph{position:relative}
+.sv-row .num{position:absolute;z-index:2;font-family:var(--eng);font-style:italic;font-size:clamp(56px,7vw,92px);line-height:1;color:var(--paper);text-shadow:0 4px 30px rgba(32,29,23,.5)}
+.sv-txt .step{font-family:var(--eng);font-style:italic;font-size:12px;letter-spacing:.3em;color:var(--acc)}
+.sv-txt h3{font-family:var(--serif);font-weight:500;font-size:clamp(20px,2.4vw,27px);letter-spacing:.12em;margin:10px 0 14px}
+.sv-txt p{font-size:13.5px;color:var(--mut);max-width:30em}
+.sv-r1 .ph{grid-column:1/8}.sv-r1 .ph .crop{aspect-ratio:16/10}
+.sv-r1 .num{right:18px;bottom:-16px}
+.sv-r1 .sv-txt{grid-column:9/13}
+.sv-r2 .sv-txt{grid-column:2/5;order:1}
+.sv-r2 .ph{grid-column:6/13;order:2}
+.sv-r2 .ph .crop{aspect-ratio:16/10}
+.sv-r2 .num{left:-14px;top:-24px}
+.sv-r3 .ph{grid-column:1/8}
+.sv-r3 .ph .crop{aspect-ratio:16/10}
+.sv-r3 .num{right:18px;bottom:-16px;top:auto}
+.sv-r3 .sv-txt{grid-column:9/13}
+
+/* ---------- PRICE ---------- */
+.price{background:var(--paper2)}
+.price .idx{bottom:26px;left:3vw;top:auto}
+.pr-head{grid-column:2/9;margin-bottom:clamp(30px,4vw,50px)}
+.pr-table{grid-column:2/9;border-top:1px solid var(--ink)}
+.pr-row{display:grid;grid-template-columns:200px 1fr;gap:14px 26px;padding:22px 4px;border-bottom:1px solid var(--line)}
+.pr-row dt{font-family:var(--serif);font-size:15.5px;letter-spacing:.1em}
+.pr-row dt small{display:block;font-family:var(--eng);font-style:italic;font-size:10.5px;letter-spacing:.24em;color:var(--acc)}
+.pr-row dd{font-size:13px;color:var(--mut)}
+.pr-note{grid-column:2/9;font-size:11.5px;color:var(--mut);margin-top:12px}
+.pr-side{grid-column:10/13;grid-row:2/4;position:relative}
+.pr-side .crop{aspect-ratio:3/4}
+.pr-side .badge{position:absolute;left:-26px;top:-20px;z-index:2;background:var(--ink);color:var(--paper);font-size:12px;letter-spacing:.2em;padding:12px 16px}
+.pr-cta{grid-column:2/9;margin-top:clamp(26px,3.4vw,40px)}
+
+/* ---------- FLOW ---------- */
+.flow .idx{top:24px;right:4vw}
+.fl-head{grid-column:2/9;margin-bottom:clamp(36px,5vw,58px)}
+.fl-list{grid-column:2/12;counter-reset:fl}
+.fl-item{counter-increment:fl;display:grid;grid-template-columns:auto 1fr auto;gap:10px clamp(18px,3vw,44px);align-items:baseline;border-bottom:1px solid var(--line);padding:clamp(18px,2.6vw,28px) 6px}
+.fl-item:first-child{border-top:1px solid var(--ink)}
+.fl-item::before{content:counter(fl,decimal-leading-zero);font-family:var(--eng);font-style:italic;font-size:clamp(26px,3.4vw,40px);color:var(--acc)}
+.fl-item h3{font-family:var(--serif);font-weight:500;font-size:clamp(16.5px,2vw,20px);letter-spacing:.12em}
+.fl-item p{grid-column:2;font-size:12.5px;color:var(--mut);max-width:38em}
+.fl-item .tag{font-size:10.5px;letter-spacing:.2em;color:var(--acc);border:1px solid var(--acc);padding:3px 12px;white-space:nowrap}
+.fl-note{grid-column:2/12;text-align:right;margin-top:20px;font-size:12.5px;color:var(--mut)}
+
+/* ---------- FAQ ---------- */
+.faq{background:var(--paper2)}
+.faq .idx{bottom:30px;right:4vw;top:auto}
+.fq-left{grid-column:2/5;position:relative}
+.fq-left .inner{position:sticky;top:120px}
+.fq-left p{font-size:12.5px;color:var(--mut);margin-top:14px;max-width:16em}
+.fq-list{grid-column:5/12}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item:first-child{border-top:1px solid var(--ink)}
+.faq-q{width:100%;display:flex;align-items:baseline;gap:16px;padding:20px 6px;background:none;border:none;cursor:pointer;text-align:left;font-family:var(--serif);font-size:15.5px;letter-spacing:.08em;color:var(--ink);line-height:1.8}
+.faq-q .qm{font-family:var(--eng);font-style:italic;font-size:19px;color:var(--acc)}
+.faq-q .pm{margin-left:auto;align-self:center;flex:0 0 20px;width:20px;height:20px;position:relative}
+.faq-q .pm::before,.faq-q .pm::after{content:"";position:absolute;top:50%;left:50%;background:var(--ink);transition:transform .4s var(--ease)}
+.faq-q .pm::before{width:14px;height:1px;transform:translate(-50%,-50%)}
+.faq-q .pm::after{width:1px;height:14px;transform:translate(-50%,-50%)}
+.faq-item.open .faq-q .pm::after{transform:translate(-50%,-50%) scaleY(0)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .5s var(--ease)}
+.faq-a .inner{padding:0 6px 22px 41px;font-size:13px;color:var(--mut)}
+.faq-a .inner .am{font-family:var(--eng);font-style:italic;color:var(--acc);margin-right:8px}
+
+/* ---------- VOICE ---------- */
+.voice .idx{top:26px;left:4vw}
+.vc-head{grid-column:2/10;margin-bottom:clamp(40px,5vw,60px)}
+.vc-grid{grid-column:1/13;display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(18px,2.6vw,32px)}
+.vc-card{background:#fbf9f4;border:1px solid var(--line);padding:clamp(24px,3vw,36px);position:relative;box-shadow:0 14px 34px rgba(32,29,23,.06)}
+.vc-card::before{content:"";position:absolute;top:-7px;left:50%;width:46px;height:14px;background:rgba(150,121,63,.28);transform:translateX(-50%) rotate(-2deg)}
+.vc-card:nth-child(1){grid-column:1/5}
+.vc-card:nth-child(2){grid-column:5/9}
+.vc-card:nth-child(3){grid-column:9/13}
+.vc-card .q{font-family:var(--eng);font-style:italic;font-size:38px;line-height:.5;color:var(--acc)}
+.vc-card p{font-size:13px;line-height:2.05;margin:14px 0 16px}
+.vc-card .who{font-size:11.5px;color:var(--mut);letter-spacing:.12em;border-top:1px solid var(--line);padding-top:12px;display:flex;justify-content:space-between}
+.vc-card .who .en{font-family:var(--eng);font-style:italic}
+.vc-tail{grid-column:1/13;height:clamp(16px,3vw,44px)}
+
+/* ---------- RECRUIT ---------- */
+.recruit{background:var(--dark);color:#efeadd;overflow:hidden}
+.recruit-bg{position:absolute;inset:0;opacity:.36}
+.recruit-bg img{width:100%;height:100%;object-fit:cover}
+.recruit::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(23,20,16,.94) 30%,rgba(23,20,16,.55))}
+.recruit .grid{position:relative;z-index:2}
+.recruit .kicker{color:#c8ab6e}
+.rc-copy{grid-column:2/8}
+.rc-copy .h2{color:#efeadd;margin-bottom:20px}
+.rc-copy p{color:rgba(239,234,221,.8);font-size:13.5px;max-width:32em;margin-bottom:26px}
+.rc-points{display:grid;gap:0;border-top:1px solid rgba(239,234,221,.25);margin-bottom:30px}
+.rc-points li{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:baseline;padding:16px 4px;border-bottom:1px solid rgba(239,234,221,.25);font-family:var(--serif);font-size:16.5px;letter-spacing:.14em}
+.rc-points li .no{font-family:var(--eng);font-style:italic;font-size:13px;color:#c8ab6e}
+.rc-points li small{font-family:var(--sans);font-size:11.5px;color:rgba(239,234,221,.6);letter-spacing:.1em}
+.recruit .btn{border-color:#efeadd;background:#efeadd;color:var(--dark)}
+.recruit .btn:hover{background:transparent;color:#efeadd}
+.rc-vert{grid-column:10/12;writing-mode:vertical-rl;font-family:var(--serif);font-size:clamp(20px,2.4vw,28px);letter-spacing:.4em;align-self:center;color:rgba(239,234,221,.9)}
+
+/* ---------- COMPANY ---------- */
+.company .idx{top:30px;right:4vw}
+.cp-head{grid-column:2/8;margin-bottom:clamp(30px,4vw,50px)}
+.cp-table{grid-column:2/8;border-top:1px solid var(--ink)}
+.cp-row{display:grid;grid-template-columns:180px 1fr;gap:12px 24px;padding:17px 4px;border-bottom:1px solid var(--line);font-size:13.5px}
+.cp-row dt{color:var(--mut);letter-spacing:.14em;font-size:12.5px}
+.cp-row dd.tba{color:var(--mut)}
+.cp-ph{grid-column:9/13;grid-row:1/3;margin-top:clamp(10px,4vw,60px)}
+.cp-ph .crop{aspect-ratio:3/4}
+
+/* ---------- CONTACT ---------- */
+.contact{background:var(--paper2);overflow:hidden}
+.contact .idx{bottom:20px;left:3vw;top:auto}
+.ct-copy{grid-column:2/6}
+.ct-copy .h2{margin-bottom:18px}
+.ct-copy p{font-size:13.5px;color:var(--mut);margin-bottom:22px;max-width:24em}
+.ct-ph{margin-bottom:22px}
+.ct-ph .crop{aspect-ratio:16/10}
+.tel-box{display:inline-flex;flex-direction:column;min-width:230px;border:1px solid var(--ink);padding:14px 26px;line-height:1.7;background:var(--paper);transition:.35s}
+.tel-box .n{font-family:var(--eng);font-size:23px;letter-spacing:.1em}
+.tel-box .t{font-size:10.5px;letter-spacing:.24em;color:var(--mut)}
+.tel-box:hover{background:var(--ink);color:var(--paper)}
+.tel-box:hover .t{color:rgba(243,240,232,.7)}
+.ct-form{grid-column:7/12;background:var(--paper);border:1px solid var(--ink);padding:clamp(26px,3.4vw,44px);position:relative;box-shadow:14px 16px 0 rgba(32,29,23,.08)}
+.f-row{margin-bottom:20px}
+.f-row label{display:block;font-size:12px;letter-spacing:.18em;color:var(--mut);margin-bottom:6px}
+.f-row label em{font-style:normal;color:var(--paper);background:var(--acc);margin-left:8px;font-size:10px;letter-spacing:.14em;padding:1px 8px}
+.f-row input,.f-row select,.f-row textarea{width:100%;background:transparent;border:none;border-bottom:1px solid var(--ink);padding:10px 2px;font-family:var(--sans);font-size:14.5px;color:var(--ink);letter-spacing:.04em;border-radius:0;transition:border-color .3s;appearance:none;-webkit-appearance:none}
+.f-row select{cursor:pointer;background-image:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"><path d="M1 1l4 4 4-4" stroke="%2396793f" fill="none"/></svg>');background-repeat:no-repeat;background-position:right 6px center}
+.f-row textarea{min-height:110px;resize:vertical;line-height:1.9}
+.f-row input:focus,.f-row select:focus,.f-row textarea:focus{outline:none;border-bottom-width:2px;border-color:var(--acc)}
+.f-row ::placeholder{color:#a9a291}
+.form-note{font-size:11.5px;color:var(--mut);margin:12px 0 20px}
+.form-done{display:none;border:1px solid var(--acc);background:var(--paper2);padding:16px 20px;font-size:13px;margin-top:14px}
+.form-done.visible{display:block}
+
+/* ---------- フッター ---------- */
+footer{background:var(--dark);color:rgba(239,234,221,.75);padding:clamp(46px,6vw,70px) 0 28px;position:relative;overflow:hidden}
+footer::before{content:"SIMPLE & SPEEDY";position:absolute;left:50%;bottom:-2vw;transform:translateX(-50%);font-family:var(--eng);font-style:italic;font-size:clamp(60px,9vw,130px);white-space:nowrap;color:rgba(239,234,221,.05);pointer-events:none}
+.ft{width:min(1240px,94vw);margin-inline:auto;position:relative;z-index:1}
+.ft-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px;align-items:flex-start;margin-bottom:40px}
+.ft-brand img{height:54px;width:auto;margin-bottom:14px}
+.ft-brand p{font-size:12px;letter-spacing:.12em;line-height:2;color:rgba(239,234,221,.55)}
+.ft-nav{display:grid;grid-template-columns:repeat(3,auto);gap:8px 30px}
+.ft-nav a{font-size:12px;letter-spacing:.16em;transition:color .3s}
+.ft-nav a:hover{color:#c8ab6e}
+.ft-btm{border-top:1px solid rgba(239,234,221,.15);padding-top:22px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:10.5px;letter-spacing:.18em;color:rgba(239,234,221,.45)}
+
+#totop{position:fixed;right:18px;bottom:18px;z-index:900;width:44px;height:44px;border:1px solid var(--ink);background:var(--paper);color:var(--ink);cursor:pointer;opacity:0;visibility:hidden;transition:.35s;display:flex;align-items:center;justify-content:center;font-family:var(--eng)}
+#totop.visible{opacity:1;visibility:visible}
+#totop:hover{background:var(--ink);color:var(--paper)}
+
+/* ---------- スマホ用固定CTAバー ---------- */
+.sp-cta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:950;grid-template-columns:1fr 1.2fr;gap:1px;background:var(--ink);border-top:1px solid var(--ink);padding-bottom:env(safe-area-inset-bottom)}
+.sp-cta a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;padding:10px 6px 11px;line-height:1.5;text-align:center}
+.sp-cta .tel{background:var(--paper);color:var(--ink)}
+.sp-cta .tel .b{font-family:var(--eng);font-size:16.5px;letter-spacing:.06em}
+.sp-cta .form{background:var(--ink);color:var(--paper)}
+.sp-cta .form .b{font-size:14px;font-weight:500;letter-spacing:.14em}
+.sp-cta .s{font-size:9.5px;letter-spacing:.18em;opacity:.7}
+body.menu-open .sp-cta{display:none}
+
+/* ---------- レスポンシブ ---------- */
+@media(max-width:1020px){
+  .rail{display:none}
+  .st-vert{grid-column:1/13;writing-mode:horizontal-tb;min-height:0;font-size:clamp(22px,5vw,30px);margin-bottom:20px}
+  .st-body{grid-column:1/13}
+  .st-ph{grid-column:2/13}
+  .pb-head,.pb-list,.pb-msg{grid-column:1/13}
+  .pb-ph{grid-column:3/11;grid-row:auto;margin-top:30px}
+  .fq-left{grid-column:1/13;margin-bottom:26px}
+  .fq-left .inner{position:static}
+  .fq-list{grid-column:1/13}
+  .cp-head,.cp-table{grid-column:1/13}
+  .cp-ph{grid-column:3/11;grid-row:auto;margin-top:30px}
+  .ct-copy{grid-column:1/13;margin-bottom:30px}
+  .ct-form{grid-column:1/13}
+  .pr-head,.pr-table,.pr-note,.pr-cta{grid-column:1/13}
+  .pr-side{grid-column:3/11;grid-row:auto;margin-top:30px}
+}
+@media(max-width:820px){
+  body{font-size:14px}
+  .gnav{display:none}
+  .menu-toggle{display:flex}
+  .hero-grid{display:block;padding:96px 0 40px}
+  .hero-ph{margin-left:0}
+  .hero-copy{margin-top:6vw;position:relative}
+  .hero-copy .over{padding:16px 14px 20px 16px;background:rgba(243,240,232,.92)}
+  .hero-index{display:none}
+  .hero-vert{display:none}
+  .rs-grid{grid-template-columns:1fr;gap:14px}
+  .rs-item:nth-child(n){grid-column:auto;transform:none}
+  .rm-grid > figure{grid-column:1/13!important;margin-top:0!important}
+  .rm-grid{gap:18px}
+  .sv-row{display:block;margin-bottom:60px}
+  .sv-row .ph{margin-bottom:18px;transform:none}
+  .sv-r2 .sv-txt{margin-bottom:0}
+  .sv-r1 .num{right:8px;bottom:-14px}
+  .fl-item{grid-template-columns:auto 1fr}
+  .fl-item .tag{display:none}
+  .vc-grid{grid-template-columns:1fr;gap:18px}
+  .vc-card:nth-child(n){grid-column:auto;transform:none}
+  .rc-copy{grid-column:1/13}
+  .rc-vert{display:none}
+  .pr-row,.cp-row{grid-template-columns:1fr;gap:2px}
+  .btn{width:100%}
+}
+@media(max-width:820px){
+  .sp-cta{display:grid}
+  body{padding-bottom:64px}
+  #totop{bottom:76px}
+  footer{padding-bottom:calc(28px + env(safe-area-inset-bottom))}
+  .grid{width:88vw}
+  .hero-grid{width:88vw}
+  .ft{width:88vw}
+  .pr-side .badge{left:-10px}
+}
+/* ---------- reduced motion ---------- */
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .rv,.rv-img{opacity:1!important;transform:none!important}
+  .rv-img .crop{clip-path:none!important}
+  .strip-track{animation:none!important}
+}
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <a class="logo" href="#top" aria-label="株式会社PLAIN トップへ">
+    <img src="images/logo.png" alt="株式会社PLAIN">
+  </a>
+  <nav class="gnav" aria-label="メインナビゲーション">
+    <a href="#problem">お悩み</a>
+    <a href="#reason">選ばれる理由</a>
+    <a href="#rooms">部屋</a>
+    <a href="#service">サービス</a>
+    <a href="#price">料金</a>
+    <a href="#recruit">採用</a>
+    <a class="cta" href="#contact">相談する</a>
+  </nav>
+  <button class="menu-toggle" aria-label="メニューを開閉" aria-expanded="false" aria-controls="mnav">
+    <span></span><span></span>
+  </button>
+</header>
+
+<nav id="mnav" aria-label="モバイルナビゲーション">
+  <ol>
+    <li><a href="#problem">お悩み</a></li>
+    <li><a href="#reason">選ばれる理由</a></li>
+    <li><a href="#rooms">たとえば、こんな部屋</a></li>
+    <li><a href="#service">サービス</a></li>
+    <li><a href="#price">料金</a></li>
+    <li><a href="#flow">ご利用の流れ</a></li>
+    <li><a href="#recruit">採用</a></li>
+    <li><a href="#contact">お問い合わせ</a></li>
+  </ol>
+</nav>
+
+<main id="top">
+
+<!-- ヒーロー -->
+<section class="hero">
+  <div class="hero-grid">
+    <figure class="hero-ph ph">
+      <div class="crop"><img src="images/m04.jpg" alt="夕方の光が差し込むリビングルーム" fetchpriority="high"></div>
+      <figcaption class="cap">ROOM&nbsp;&mdash;&nbsp;写真はイメージ</figcaption>
+    </figure>
+    <div class="hero-copy">
+      <div class="over">
+        <p class="hero-eyebrow">PLAIN&nbsp;REAL&nbsp;ESTATE</p>
+        <h1>
+          <span class="l1">シンプルに、</span>
+          <span class="l2"><span class="em">いちばん速い</span></span>
+          <span class="l3">部屋探し。</span>
+        </h1>
+        <p class="hero-lead">はじめての一人暮らしも、急なお引っ越しも。余計なものを削ぎ落としたご提案とスピードで、新生活を最短距離でかたちにします。</p>
+        <div class="hero-btns">
+          <a class="btn" href="#contact">無料で相談する<span class="ar">&rarr;</span></a>
+          <a class="btn ghost" href="#recruit">採用情報<span class="ar">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-index" aria-hidden="true">
+      <span><b>01</b>お悩み</span><span><b>02</b>理由</span><span><b>03</b>部屋</span><span><b>04</b>サービス</span><span><b>05</b>料金</span>
+    </div>
+    <div class="hero-vert" aria-hidden="true">SCROLL</div>
+  </div>
+</section>
+
+<!-- STATEMENT -->
+<section class="statement">
+  <span class="idx" aria-hidden="true">Prologue</span>
+  <div class="grid">
+    <h2 class="st-vert rv">飾らないことを、<br><span class="em">誠実さ</span>に。</h2>
+    <div class="st-body rv">
+      <p>社名の「PLAIN」は、<strong>“飾らない・シンプル”</strong>という意味。</p>
+      <p>住まい探しから余計なものを削ぎ落とし、本当に必要なご提案だけを、まっすぐお届けする。ご紹介する物件も、費用のご説明も、いつも率直に、分かりやすく。</p>
+      <p class="st-sign">&mdash; PLAIN Inc.</p>
+    </div>
+    <figure class="st-ph ph rv-img">
+      <div class="crop"><img src="images/fam03.jpg" alt="引っ越したばかりの部屋で寛ぐ二人と犬" loading="lazy"></div>
+      <figcaption><span class="en">NEW&nbsp;LIFE</span><span class="imgnote">新しい暮らしのはじまり&nbsp;／&nbsp;写真はイメージ</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem" id="problem">
+  <span class="idx" aria-hidden="true">No.01</span>
+  <p class="rail r" aria-hidden="true">お部屋探しの、お悩みに。</p>
+  <div class="grid">
+    <div class="pb-head rv">
+      <p class="kicker">PROBLEM</p>
+      <h2 class="h2">こんなお悩み、<br>ありませんか。</h2>
+    </div>
+    <div class="pb-list">
+      <div class="pb-item rv">
+        <span class="no">1.</span>
+        <div>
+          <h3>初期費用が高い</h3>
+          <p>敷金・礼金・仲介手数料……気づけば想像の倍の金額に。最初の出費は、できるだけ抑えたい。</p>
+        </div>
+      </div>
+      <div class="pb-item rv">
+        <span class="no">2.</span>
+        <div>
+          <h3>とにかく時間がない</h3>
+          <p>仕事や学校が忙しく、何度も店舗へ足を運ぶ余裕がない。短期間でスパッと決めたい。</p>
+        </div>
+      </div>
+      <div class="pb-item rv">
+        <span class="no">3.</span>
+        <div>
+          <h3>初めてで、不安</h3>
+          <p>一人暮らしがはじめてで、何から手をつければいいのか分からない。気軽に相談できる相手がほしい。</p>
+        </div>
+      </div>
+    </div>
+    <figure class="pb-ph ph rv-img">
+      <div class="inner">
+        <div class="crop"><img src="images/bi04.jpg" alt="白を基調にした明るいリビング" loading="lazy"></div>
+        <figcaption><span class="en">BRIGHT</span><span class="imgnote">写真はイメージ</span></figcaption>
+      </div>
+    </figure>
+    <p class="pb-msg rv"><span class="en-line">&mdash;&nbsp;ANSWER</span>そのお悩み、<span class="circle-note">PLAIN</span>&nbsp;がまとめて解決します。</p>
+  </div>
+</section>
+
+<!-- REASON -->
+<section class="reason" id="reason">
+  <span class="idx" aria-hidden="true">No.02</span>
+  <div class="grid">
+    <div class="rs-head rv">
+      <p class="kicker">REASON</p>
+      <h2 class="h2">選ばれる理由は、<br>3つだけ。</h2>
+    </div>
+    <div class="rs-grid">
+      <div class="rs-item rv">
+        <span class="big">1</span>
+        <span class="en">SPEED</span>
+        <h3>とにかく、速い</h3>
+        <p>お問い合わせへのお返事も、物件のご提案も、スピード第一。お急ぎのご入居希望にも、最速のスケジュールでお応えします。</p>
+      </div>
+      <div class="rs-item rv">
+        <span class="big">2</span>
+        <span class="en">SMART&nbsp;COST</span>
+        <h3>ムダのない費用提案</h3>
+        <p>「できるだけ抑えたい」という本音に寄り添い、初期費用に無理のないお部屋探しをご提案します。</p>
+      </div>
+      <div class="rs-item rv">
+        <span class="big">3</span>
+        <span class="en">CLOSE</span>
+        <h3>気軽に相談できる</h3>
+        <p>友人に話すような気軽さで、住まいのこと、なんでもどうぞ。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROOMS GALLERY -->
+<section class="rooms" id="rooms">
+  <span class="idx" aria-hidden="true">No.03</span>
+  <div class="grid">
+    <div class="rm-head rv">
+      <p class="kicker">ROOMS</p>
+      <h2 class="h2">たとえば、こんな部屋。</h2>
+    </div>
+    <p class="rm-note rv">光の入りかた、床の鳴る音、窓の外の景色。あなたの「ちょうどいい」を、一緒に探します。<br>※掲載写真はイメージです。</p>
+    <div class="rm-grid">
+      <figure class="ph rv-img rm-a"><div class="crop"><img src="images/mb04.jpg" alt="緑に囲まれた白いマンションの外観" loading="lazy" style="object-position:center bottom"></div><figcaption><span class="en">01&nbsp;/&nbsp;APARTMENT</span><span class="imgnote">バルコニーのある住まい</span></figcaption></figure>
+      <figure class="ph rv-img rm-b"><div class="crop"><img src="images/bi02.jpg" alt="大きな窓から緑が見えるリビング" loading="lazy"></div><figcaption><span class="en">02&nbsp;/&nbsp;LIGHT</span><span class="imgnote">光をとりこむリビング</span></figcaption></figure>
+      <figure class="ph rv-img rm-c"><div class="crop"><img src="images/mb03.jpg" alt="空にのびる白いレジデンス" loading="lazy" style="object-position:center bottom"></div><figcaption><span class="en">03&nbsp;/&nbsp;TOWER</span><span class="imgnote">空にちかい部屋</span></figcaption></figure>
+      <figure class="ph rv-img rm-d"><div class="crop"><img src="images/m03.jpg" alt="天窓から光の入る白い部屋" loading="lazy"></div><figcaption><span class="en">04&nbsp;/&nbsp;SKYLIGHT</span><span class="imgnote">天窓のある白い部屋</span></figcaption></figure>
+      <figure class="ph rv-img rm-e"><div class="crop"><img src="images/room04.jpg" alt="天窓から光が差し込む屋根裏のダイニング" loading="lazy"></div><figcaption><span class="en">05&nbsp;/&nbsp;ATTIC</span><span class="imgnote">天窓のある部屋</span></figcaption></figure>
+      <figure class="ph rv-img rm-f"><div class="crop"><img src="images/room01.jpg" alt="植物と色に溢れた明るい部屋" loading="lazy"></div><figcaption><span class="en">06&nbsp;/&nbsp;COLOR</span><span class="imgnote">植物と暮らす部屋</span></figcaption></figure>
+    </div>
+    <div class="rm-more rv">
+      <a class="btn" href="#contact">理想の部屋を相談する<span class="ar">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE -->
+<section class="service" id="service">
+  <span class="idx" aria-hidden="true">No.04</span>
+  <div class="grid">
+    <div class="sv-head rv">
+      <p class="kicker">SERVICE</p>
+      <h2 class="h2">ご相談からご入居まで、<br>3つのステップで。</h2>
+    </div>
+    <div class="sv-row sv-r1">
+      <figure class="ph rv-img">
+        <div class="crop"><img src="images/m01.jpg" alt="窓の外に街が見える明るい部屋" loading="lazy"></div>
+        <span class="num" aria-hidden="true">1</span>
+        <figcaption><span class="en">PROPOSAL</span><span class="imgnote">写真はイメージ</span></figcaption>
+      </figure>
+      <div class="sv-txt rv">
+        <span class="step">SERVICE&nbsp;/&nbsp;01</span>
+        <h3>物件のご提案</h3>
+        <p>ご希望のエリア・ご予算・こだわりを伺い、条件に合うお部屋をスピーディーにご提案。数うちではなく、「あなたに合う数件」を厳選してお届けします。</p>
+      </div>
+    </div>
+    <div class="sv-row sv-r2">
+      <div class="sv-txt rv">
+        <span class="step">SERVICE&nbsp;/&nbsp;02</span>
+        <h3>内見のご案内</h3>
+        <p>気になるお部屋は、ご都合に合わせてスムーズに内見へ。写真では分からない日当たりや音、街の空気まで、現地でじっくりお確かめください。</p>
+      </div>
+      <figure class="ph rv-img">
+        <div class="crop"><img src="images/mb02.jpg" alt="青空の下のモダンな住宅" loading="lazy"></div>
+        <span class="num" aria-hidden="true">2</span>
+        <figcaption><span class="en">VIEWING</span><span class="imgnote">写真はイメージ</span></figcaption>
+      </figure>
+    </div>
+    <div class="sv-row sv-r3">
+      <figure class="ph rv-img">
+        <div class="crop"><img src="images/bi05.jpg" alt="明るく整えられた新居のリビング" loading="lazy"></div>
+        <span class="num" aria-hidden="true">3</span>
+        <figcaption><span class="en">CONTRACT</span><span class="imgnote">写真はイメージ</span></figcaption>
+      </figure>
+      <div class="sv-txt rv">
+        <span class="step">SERVICE&nbsp;/&nbsp;03</span>
+        <h3>ご契約からご入居まで</h3>
+        <p>面倒になりがちなお手続きは、できる限りシンプルに。鍵のお引き渡しまで、そしてご入居後のご相談まで、丁寧にお付き合いします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICE -->
+<section class="price" id="price">
+  <span class="idx" aria-hidden="true">No.05</span>
+  <div class="grid">
+    <div class="pr-head rv">
+      <p class="kicker">PRICE</p>
+      <h2 class="h2">料金のこと、率直に。</h2>
+    </div>
+    <dl class="pr-table rv">
+      <!-- ※公開前に確定した料金体系へ差し替えること -->
+      <div class="pr-row">
+        <dt>仲介手数料<small>AGENCY&nbsp;FEE</small></dt>
+        <dd>物件により異なります。お見積りは無料ですので、お気軽にお問い合わせください。</dd>
+      </div>
+      <div class="pr-row">
+        <dt>初期費用<small>INITIAL&nbsp;COST</small></dt>
+        <dd>「できるだけ抑えたい」に寄り添った、無理のないプランをご提案。敷金・礼金を抑えたお部屋のご紹介もお任せください。</dd>
+      </div>
+      <div class="pr-row">
+        <dt>ご相談・お見積り<small>ESTIMATE</small></dt>
+        <dd>すべて無料です。他社さまでお探し中のお部屋のご相談も歓迎します。</dd>
+      </div>
+    </dl>
+    <p class="pr-note rv">※ 費用は物件・ご契約条件により異なります。</p>
+    <figure class="pr-side ph rv-img">
+      <span class="badge">相談・見積り 無料</span>
+      <div class="crop"><img src="images/bi01.jpg" alt="観葉植物のある明るい部屋" loading="lazy"></div>
+      <figcaption><span class="en">ROOM</span><span class="imgnote">写真はイメージ</span></figcaption>
+    </figure>
+    <div class="pr-cta rv">
+      <a class="btn" href="#contact">無料で見積りを相談する<span class="ar">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section class="flow" id="flow">
+  <span class="idx" aria-hidden="true">No.06</span>
+  <div class="grid">
+    <div class="fl-head rv">
+      <p class="kicker">FLOW</p>
+      <h2 class="h2">ご入居までの流れ。</h2>
+    </div>
+    <ol class="fl-list">
+      <li class="fl-item rv">
+        <h3>お問い合わせ</h3><span class="tag">フォーム・電話OK</span>
+        <p>フォームまたはお電話で。「なんとなく探し始めた」段階でも大歓迎です。</p>
+      </li>
+      <li class="fl-item rv">
+        <h3>ヒアリング</h3><span class="tag">お急ぎ対応</span>
+        <p>ご希望のエリア・ご予算・入居時期を伺います。お急ぎの方はその旨お伝えください。</p>
+      </li>
+      <li class="fl-item rv">
+        <h3>ご提案・内見</h3><span class="tag">厳選してご紹介</span>
+        <p>条件に合うお部屋をご提案し、気になる物件へご案内します。</p>
+      </li>
+      <li class="fl-item rv">
+        <h3>お申し込み・ご契約</h3><span class="tag">手続きは分かりやすく</span>
+        <p>必要書類やお手続きは、分かりやすくご案内。はじめての方もご安心ください。</p>
+      </li>
+      <li class="fl-item rv">
+        <h3>ご入居</h3><span class="tag">新生活スタート</span>
+        <p>鍵のお引き渡しで、新生活のはじまり。ご入居後のご相談もお気軽に。</p>
+      </li>
+    </ol>
+    <p class="fl-note rv">お急ぎの方は、<b>最短のスケジュール</b>を組んでご提案します。</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <span class="idx" aria-hidden="true">No.07</span>
+  <div class="grid">
+    <div class="fq-left">
+      <div class="inner rv">
+        <p class="kicker">FAQ</p>
+        <h2 class="h2">よくある<br>ご質問。</h2>
+        <p>ここにない疑問は、フォームやお電話でお気軽にどうぞ。</p>
+      </div>
+    </div>
+    <div class="fq-list">
+      <div class="faq-item rv">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span class="qm">Q.</span>相談だけでも大丈夫ですか？
+          <span class="pm" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a"><p class="inner"><span class="am">A.</span>もちろんです。「引っ越すかどうかまだ決めていない」段階のご相談も歓迎です。無理におすすめすることはありません。</p></div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span class="qm">Q.</span>相談やお見積りにお金はかかりますか？
+          <span class="pm" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a"><p class="inner"><span class="am">A.</span>ご相談・お見積りはすべて無料です。費用が発生するタイミングは、事前に必ず分かりやすくご説明します。</p></div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span class="qm">Q.</span>急いでいます。どのくらいで入居できますか？
+          <span class="pm" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a"><p class="inner"><span class="am">A.</span>物件やご契約条件・審査によって変わりますが、お急ぎの場合は最短のスケジュールを組んでご提案します。まずは入居希望日をお聞かせください。</p></div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span class="qm">Q.</span>学生・フリーターでも部屋を借りられますか？
+          <span class="pm" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a"><p class="inner"><span class="am">A.</span>あきらめる前に、ぜひ一度ご相談ください。初期費用や審査のことも含めて、いまの状況に合わせた探し方を一緒に考えます。</p></div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span class="qm">Q.</span>採用に応募したいときは？
+          <span class="pm" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a"><p class="inner"><span class="am">A.</span>お問い合わせフォームで「採用へのご応募」を選択して送信してください。お電話でも大丈夫です。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VOICE -->
+<section class="voice" id="voice">
+  <span class="idx" aria-hidden="true">No.08</span>
+  <div class="grid">
+    <div class="vc-head rv">
+      <p class="kicker">VOICE</p>
+      <h2 class="h2">お客様の声。</h2>
+    </div>
+    <!-- ※以下はサンプル原稿。公開前に実際のお客様の声へ差し替えること -->
+    <div class="vc-grid">
+      <div class="vc-card rv">
+        <span class="q" aria-hidden="true">&ldquo;</span>
+        <p>初めての一人暮らしで不安だらけでしたが、費用のことまで丁寧に教えてもらえて安心できました。相談してよかったです。</p>
+        <div class="who"><span>20代・学生</span><span class="en">CASE&nbsp;01</span></div>
+      </div>
+      <div class="vc-card rv">
+        <span class="q" aria-hidden="true">&ldquo;</span>
+        <p>急な転勤で時間がなかったのに、相談したその週には新居が決まりました。返信も案内も、とにかく速かった。</p>
+        <div class="who"><span>20代・会社員</span><span class="en">CASE&nbsp;02</span></div>
+      </div>
+      <div class="vc-card rv">
+        <span class="q" aria-hidden="true">&ldquo;</span>
+        <p>予算が少なくて半分諦めていましたが、初期費用を抑えられるお部屋を一緒に探してもらえました。感謝しています。</p>
+        <div class="who"><span>20代・アルバイト</span><span class="en">CASE&nbsp;03</span></div>
+      </div>
+    </div>
+    <div class="vc-tail" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- RECRUIT -->
+<section class="recruit" id="recruit">
+  <div class="recruit-bg"><img src="images/mb01.jpg" alt="" loading="lazy" aria-hidden="true"></div>
+  <div class="grid">
+    <div class="rc-copy rv">
+      <p class="kicker">RECRUIT</p>
+      <h2 class="h2">働き方も、<br>シンプルに。</h2>
+      <p>PLAINでは、一緒に働く仲間を募集しています。単発のお仕事から、しっかり稼ぎたい方まで。あなたのライフスタイルに合わせた、飾らない働き方を。</p>
+      <ul class="rc-points">
+        <li><span class="no">01</span>単発OK<small>1日から気軽に</small></li>
+        <li><span class="no">02</span>高時給<small>がんばりに応える時給設定</small></li>
+        <li><span class="no">03</span>日払い対応<small>働いた分はすぐに</small></li>
+      </ul>
+      <a class="btn" href="#contact" data-recruit>応募・お問い合わせ<span class="ar">&rarr;</span></a>
+    </div>
+    <p class="rc-vert rv" aria-hidden="true">共に、働く。</p>
+  </div>
+</section>
+
+<!-- COMPANY -->
+<section class="company" id="company">
+  <span class="idx" aria-hidden="true">No.10</span>
+  <div class="grid">
+    <div class="cp-head rv">
+      <p class="kicker">COMPANY</p>
+      <h2 class="h2">会社概要。</h2>
+    </div>
+    <dl class="cp-table rv">
+      <div class="cp-row"><dt>会社名</dt><dd>株式会社PLAIN</dd></div>
+      <div class="cp-row"><dt>事業内容</dt><dd>不動産賃貸業</dd></div>
+      <div class="cp-row"><dt>電話番号</dt><dd><a href="tel:08025279209">080-2527-9209</a></dd></div>
+      <div class="cp-row"><dt>所在地</dt><dd class="tba">近日公開</dd></div>
+      <div class="cp-row"><dt>営業時間・定休日</dt><dd class="tba">近日公開</dd></div>
+      <div class="cp-row"><dt>宅地建物取引業免許</dt><dd class="tba">近日公開</dd></div>
+    </dl>
+    <figure class="cp-ph ph rv-img">
+      <div class="crop"><img src="images/ext03.jpg" alt="ガラス張りのモダンな住宅" loading="lazy"></div>
+      <figcaption><span class="en">ARCHITECTURE</span><span class="imgnote">写真はイメージ</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <span class="idx" aria-hidden="true">No.11</span>
+  <div class="grid">
+    <div class="ct-copy rv">
+      <p class="kicker">CONTACT</p>
+      <h2 class="h2">まずは、気軽に<br>ご相談ください。</h2>
+      <p>お部屋探しのご相談、内見のご予約、採用へのご応募など。ご相談は無料です。お急ぎの方はお電話が確実です。</p>
+      <figure class="ph rv-img ct-ph">
+        <div class="crop"><img src="images/fam02.jpg" alt="新しい住まいの前で寛ぐ家族" loading="lazy"></div>
+        <figcaption><span class="en">WITH&nbsp;FAMILY</span><span class="imgnote">写真はイメージ</span></figcaption>
+      </figure>
+      <a class="tel-box" href="tel:08025279209"><span class="n">080-2527-9209</span><span class="t">TAP&nbsp;TO&nbsp;CALL</span></a>
+    </div>
+    <form id="contactForm" class="ct-form rv" novalidate>
+      <div class="f-row">
+        <label for="f-type">ご用件<em>必須</em></label>
+        <select id="f-type" name="type" required>
+          <option value="お部屋探しのご相談">お部屋探しのご相談</option>
+          <option value="内見のご予約">内見のご予約</option>
+          <option value="採用へのご応募">採用へのご応募</option>
+          <option value="その他">その他</option>
+        </select>
+      </div>
+      <div class="f-row">
+        <label for="f-name">お名前<em>必須</em></label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="山田 太郎">
+      </div>
+      <div class="f-row">
+        <label for="f-contact">ご連絡先（電話またはメール）<em>必須</em></label>
+        <input id="f-contact" name="contact" type="text" autocomplete="email" required placeholder="例）090-0000-0000 / example@mail.com">
+      </div>
+      <div class="f-row">
+        <label for="f-msg">ご希望・ご質問</label>
+        <textarea id="f-msg" name="message" placeholder="例）◯◯駅の近くで、家賃◯万円までの1Kを探しています。"></textarea>
+      </div>
+      <p class="form-note">※ フォームは現在準備中です。お急ぎの方はお電話（080-2527-9209）にてご連絡ください。</p>
+      <button class="btn" type="submit">送信する<span class="ar">&rarr;</span></button>
+      <p class="form-done" id="formDone" role="status">お問い合わせありがとうございます。<br>現在フォームは準備中のため送信は完了していません。お手数ですが、お電話（080-2527-9209）にてご連絡ください。</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="ft">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <img src="images/logo_white.png" alt="株式会社PLAIN">
+        <p>シンプルに、いちばん速い部屋探し。<br>TEL&nbsp;080-2527-9209</p>
+      </div>
+      <nav class="ft-nav" aria-label="フッターナビゲーション">
+        <a href="#problem">お悩み</a>
+        <a href="#reason">選ばれる理由</a>
+        <a href="#rooms">たとえばこんな部屋</a>
+        <a href="#service">サービス</a>
+        <a href="#price">料金</a>
+        <a href="#flow">ご利用の流れ</a>
+        <a href="#faq">よくあるご質問</a>
+        <a href="#recruit">採用</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+    </div>
+    <div class="ft-btm">
+      <span>&copy; 2026 PLAIN Inc. All Rights Reserved.</span>
+      <span>掲載写真はイメージです</span>
+    </div>
+  </div>
+</footer>
+
+<button id="totop" aria-label="ページ上部へ戻る">&uarr;</button>
+
+<nav class="sp-cta" aria-label="お問い合わせショートカット">
+  <a class="tel" href="tel:08025279209"><span class="b">080-2527-9209</span><span class="s">タップで発信</span></a>
+  <a class="form" href="#contact"><span class="b">無料で相談する</span><span class="s">FORM</span></a>
+</nav>
+
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var body = document.body;
+
+  /* 読み込み失敗した画像は非表示 */
+  document.querySelectorAll('img').forEach(function(im){
+    im.addEventListener('error', function(){ im.style.display = 'none'; });
+  });
+
+  /* ヘッダー・ページトップ */
+  var header = document.getElementById('siteHeader');
+  var totop = document.getElementById('totop');
+  function onScroll(){
+    header.classList.toggle('scrolled', scrollY > 30);
+    if(totop) totop.classList.toggle('visible', scrollY > innerHeight);
+  }
+  addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  if(totop) totop.addEventListener('click', function(){ scrollTo({top:0, behavior: reduce ? 'auto' : 'smooth'}); });
+
+  /* モバイルメニュー */
+  var toggle = document.querySelector('.menu-toggle');
+  if(toggle){
+    toggle.addEventListener('click', function(){
+      var open = body.classList.toggle('menu-open');
+      toggle.setAttribute('aria-expanded', open);
+      body.classList.toggle('lock', open);
+    });
+    document.querySelectorAll('#mnav a').forEach(function(a){
+      a.addEventListener('click', function(){
+        body.classList.remove('menu-open','lock');
+        toggle.setAttribute('aria-expanded','false');
+      });
+    });
+  }
+
+  /* reveal（clip-path要素は親を番兵に） */
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      var t = e.target;
+      t.classList.add('show');
+      if(t.__rvKids){ t.__rvKids.forEach(function(c){ c.classList.add('show'); }); }
+      io.unobserve(t);
+    });
+  }, {threshold:.12, rootMargin:'0px 0px -30px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+  document.querySelectorAll('.rv-img').forEach(function(el){
+    var s = el.parentElement || el;
+    if(!s.__rvKids) s.__rvKids = [];
+    s.__rvKids.push(el);
+    io.observe(s);
+  });
+
+  /* FAQ */
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var q = item.querySelector('.faq-q');
+    var a = item.querySelector('.faq-a');
+    q.addEventListener('click', function(){
+      var open = item.classList.toggle('open');
+      q.setAttribute('aria-expanded', open);
+      a.style.maxHeight = open ? (a.scrollHeight + 'px') : '0px';
+    });
+  });
+
+  /* 採用リンク → フォームのご用件を自動選択 */
+  document.querySelectorAll('[data-recruit]').forEach(function(a){
+    a.addEventListener('click', function(){
+      var sel = document.getElementById('f-type');
+      if(sel) sel.value = '採用へのご応募';
+    });
+  });
+
+  /* フォーム（送信先は公開時に接続） */
+  var form = document.getElementById('contactForm');
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var done = document.getElementById('formDone');
+      if(done){ done.classList.add('visible'); done.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'center'}); }
+    });
+  }
+})();
+</script>
+</body>
+</html>
